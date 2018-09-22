@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declaring variables
+    int strength=0, magic=0, speed=0, endurance=0, charisma=0;
+    string name;
+    char userinput;
+    cout << "Welcome to the hackathon game." << endl;
+    cout << "This is a game in which you're the one dictating your destiny." << endl;
+    cout << "But first, tell me your name." << endl;
+    cin >> name;
+    cout << "Nice to meet you, " << name << " ." << endl;
+
+    //determine the class and race
+    cout << "Now tell me more about yourself." << endl;
+    cout << "Do you walk fast? [Y / N]";
+    cin >> userinput;
+    if(userinput == 'Y') { 
+        speed += 2;
+        strength += 1;
+    }
+    else {
+        endurance += 1;
+        magic += 1;
+        }
+    cout << "Are you good at talking to people? [Y/N]";
+    cin >> userinput;
+    if(userinput == 'Y') {
+        charisma += 2; magic ++ 1;
+    }
+    else {
+        sterngth += 1; 
+        }
+    cout << "Do you like adventures? [Y/N]";
+    cint >> userinput;
+    if(userinput == 'Y') {
+        strength += 2; endurance += 
+
+    cout << strength << magic << speed << endurance << charisma;
+    return 0;
+}

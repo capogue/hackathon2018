@@ -34,9 +34,45 @@ int main()
         sterngth += 1; 
         }
     cout << "Do you like adventures? [Y/N]";
-    cint >> userinput;
+    cin >> userinput;
     if(userinput == 'Y') {
-        strength += 2; endurance += 
+        strength += 2; endurance += 1; speed += 1;
+        }
+    else {
+        magic += 2; charisma += 1;
+        }
+    cout << "Do you prefer cats over dogs? [Y/N]";
+    cint >> userinput;
+    if(userinput == 'Y'){
+        charisma += 2; magic += 2;
+        }
+    else {
+        strength += 2; speed += 2 endurance += 1;
+        }
+    cout << "Do you prefer summer over winter? [Y/N]";
+    cint >> userinput;
+    if(userinput == 'Y'){
+        charisma += 1; magic += 1; speed += 1;
+        }
+    else {
+        endurance += 1; strength += 1;
+        }
+    cout << "Do you prefer to remember over experience? [Y/N]";
+    cin >> userinput;
+    if(userinput == 'Y'){
+        magic += 2; charisma += 1;
+        }
+    else {
+        strength += 1; speed = 1; endurance += 1;
+        }
+    cout << "Why? [Y = why not? / N = why what?]";
+    cin << userinput;
+    if(userinput == 'Y'){
+        charisma += 2; strength += 1;
+        }
+else {
+        speed += 1; magic += 2; endurance += 1;
+        }
 
     cout << strength << magic << speed << endurance << charisma;
     return 0;
